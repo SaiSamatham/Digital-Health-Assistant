@@ -20,7 +20,7 @@ The goal of this project is to create an accessible, immediate, and informative 
 
 This project is built using the following core technologies:
 
-* **Python 3.x**
+* **Python 3**
 * **Flask**: Web framework for handling routes and serving HTML templates.
 * **Pandas**: For reading, processing, and manipulating the health datasets.
 * **NumPy**: For efficient handling of numerical operations, especially creating the symptom input vector.
@@ -52,8 +52,9 @@ This project is built using the following core technologies:
 
 ## 📂 Project Structure
 
-Your project relies on several external files for datasets and the trained model.
+The project relies on several external files for datasets and the trained model.
 
+```text
 health-navigator/
 ├── main.py                     # The main Flask application logic
 ├── Models/
@@ -66,11 +67,12 @@ health-navigator/
 │   ├── medications.csv         # Medication suggestions
 │   └── diets.csv               # Diet recommendations
 └── templates/
-├── index.html              # Main prediction page
-├── about.html
-├── contact.html
-├── blog.html
-└── developer.html
+    ├── index.html              # Main prediction page
+    ├── about.html
+    ├── contact.html
+    ├── blog.html
+    └── developer.html
+```
 
 **⚠️ Important**: Ensure the `Models` and `Datasets` folders exist and contain the necessary files, as `main.py` explicitly loads them.
 
